@@ -73,10 +73,6 @@ hist(total.steps, xlab = "Sum Of Steps Per Day", main = "Histogram Of Steps Per 
 
 ![](PA1_template_files/figure-html/histtotalstep-1.png)<!-- -->
 
-```r
-png(filename="./figure/Hist_Steps_Per_Day.png",width=800,height=600,units="px")
-```
-
 iii - The mean and the median total number of steps taken per day are reported:
 
 ```r
@@ -113,10 +109,6 @@ plot(average.steps ~ unique(activity$interval), type="l", xlab = "5-min Interval
 ```
 
 ![](PA1_template_files/figure-html/plot5min-1.png)<!-- -->
-
-```r
-png(filename="./figure/Hist_5min_Interval.png",width=800,height=600,units="px")
-```
 
 ii - The 5-minute interval (on average across all the days in the dataset) that contains the maximum number of steps is the following (below are shown the interval showing the max. number of steps and the value of the max. number of steps):
 
@@ -191,10 +183,6 @@ hist(total.steps2, xlab = "Sum of Steps Per Day", main = "Histogram Of Steps Per
 ```
 
 ![](PA1_template_files/figure-html/gethiststeps-1.png)<!-- -->
-
-```r
-png(filename="./figure/Hist_Sum_Steps_Per_Day.png",width=800,height=600,units="px")
-```
 
 The new values are :
 
@@ -317,15 +305,5 @@ type = "l", ylab = "Number of steps")
 ```
 
 ![](PA1_template_files/figure-html/getnumsteps-1.png)<!-- -->
-
-```r
-png(filename="./figure/Hist_Number_Of_Steps.png",width=800,height=600,units="px")
-dev.off()
-```
-
-```
-## png 
-##   2
-```
 
 **Yes, it does look like there are differences in activity patterns between weekdays and weekends. During weekdays, there is a peak in activity early in the day and then little activity the rest of the day. During weekends, the activity is consistently slightly higher over the day, but without the peak seen on weekdays.**
